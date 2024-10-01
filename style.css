@@ -97,21 +97,30 @@
   font-weight:lighter;
   }
   
-  .bloco1 {
-    background-color: #beb8b83b;
-    padding: 10.4px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o conteúdo, incluindo a imagem */
-    max-width: 260px; /* Largura máxima do bloco */
-    margin: 20px auto; /* Centraliza o bloco horizontalmente na página */
-    border-radius: 20px;
-    margin-left: 10%;
-  }
-  
-  .img {
-    max-width: 80%; /* Controla a largura máxima da imagem */
-    border-radius: 10%; /* Bordas arredondadas */
-    margin: 0 auto; /* Centraliza a imagem */
-    display: block; /* Garante que o elemento imagem se comporte como bloco */
-    padding: 10px 4px;
-  }
-  
+.blocolem{
+  padding: 20px;
+  margin: 20px;
+  background-color: #beb8b83b;
+  border-radius: 10px;
+  color: rgb(0, 0, 0); /* Cor do texto */
+  display: block;
+  width: 60%;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.211); /* Adiciona sombra */
+
+}
+
+h4{
+color: rgb(0, 0, 0); /* Cor do texto */
+font-weight: bold;
+text-align: center;
+}
+
+#lembre {
+  border-radius: 17px;
+  margin-left: 1px;
+  border: 2px solid #c2c2c2;
+  width: 100%;
+  padding: 8px;
+margin-top: 20px;
+}
+
