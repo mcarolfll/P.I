@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adicionar Lembretes</title>
+</head>
+<body>
+    <div class="header">Adicionar Lembretes</div>
+    
+  <div class="search-bar">
+    <input type="text" placeholder="Digite aqui o que deseja!">
+  </div> 
+  <a href="Lembretes.html" class="botao-link">Voltar</a>
+
+  <div class="blocolem">
+<h4>O que deseja lembrar hoje?</h4>
+<input type="text" id="lembre">
+</div>
+
+
+
+</body>
+</html>
