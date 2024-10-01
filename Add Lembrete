@@ -8,18 +8,20 @@
 </head>
 <body>
     <div class="header">Adicionar Lembretes</div>
+  
+    <div class="search-bar">
+        <input type="text" id="lembreInput" placeholder="O que deseja lembrar?!">
+    </div>
     
-  <div class="search-bar">
-    <input type="text" placeholder="Digite aqui o que deseja!">
-  </div> 
-  <a href="Lembretes.html" class="botao-link">Voltar</a>
+    <div class="search-bar">
+        <input type="date" id="dataInput" placeholder="Selecione a data!">
+        <input type="time" id="horaInput" placeholder="Selecione a hora!">
+    </div>
 
-  <div class="blocolem">
-<h4>O que deseja lembrar hoje?</h4>
-<input type="text" id="lembre">
-</div>
+    <a href="index.html" class="botao-link">Voltar</a>
+    <button id="addBtn">Adicionar Lembrete</button>
 
-
-
+    <script src="script.js"></script>
 </body>
 </html>
+
