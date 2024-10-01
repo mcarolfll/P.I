@@ -1,0 +1,40 @@
+// Adiciona um lembrete ao localStorage
+document.getElementById('addBtn')?.addEventListener('click', function() {
+    const lembreInput = document.getElementById('lembreInput');
+    const dataInput = document.getElementById('dataInput');
+    const horaInput = document.getElementById('horaInput');
+    
+    const lembreText = lembreInput.value.trim();
+    const dataText = dataInput.value;
+    const horaText = horaInput.value;
+
+    if (lembreText && dataText && horaText) {
+        let lembretes = JSON.parse(localStorage.getItem('lembretes')) || [];
+        lembretes.push({ text: lembreText, data: dataText, hora: horaText });
+        localStorage.setItem('lembretes', JSON.stringify(lembretes));
+        lembreInput.value = ''; // Limpa o campo
+        dataInput.value = '';   // Limpa o campo
+        horaInput.value = '';   // Limpa o campo
+        alert('Lembrete adicionado!');
+    } else {
+        alert('Por favor, preencha todos os campos!');
+    }
+});
+
+// Carrega os lembretes do localStorage na página inicial
+function loadLembretes() {
+    const lembretesContainer = document.getElementById('lembretesContainer');
+    const lembretes = JSON.parse(localStorage.getItem('lembretes')) || [];
+
+    lembretes.forEach(lembrete => {
+        const bloco = document.createElement('div');
+        bloco.classList.add('bloco');
+        bloco.innerHTML = `<h3>${lembrete.text}</h3><h6>${lembrete.data} ${lembrete.hora}</h6>`;
+        lembretesContainer.appendChild(bloco);
+    });
+}
+
+// Executa a função ao carregar a página
+if (document.getElementById('lembretesContainer')) {
+    loadLembretes();
+}
